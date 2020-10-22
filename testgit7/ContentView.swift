@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    var pallete: String = "🍎💎"
     var body: some View {
-        Text("Hi, world!")
-            .padding()
+        HStack {
+            Text(pallete)
+        }
+        // Text("Hi, world!").padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
