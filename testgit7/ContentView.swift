@@ -10,12 +10,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var document: EArtDoc
+    
     var pallete: String = "🍎💎"
+    
     var body: some View {
         VStack {
             HStack {
                 // Text(pallete)
-                ForEach(pallete.map { String($0) }, id: \.self ) {
+                ForEach(EArtDoc.pallete.map { String($0) }, id: \.self ) {
                     emoj in Text(emoj)
                 }
                 // ForEach  = this computes views on demand from an underlying collection of of identified data.

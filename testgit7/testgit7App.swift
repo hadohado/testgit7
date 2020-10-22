@@ -11,7 +11,7 @@ import SwiftUI
 struct testgit7App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(document: EArtDoc())
         }
     }
 }
