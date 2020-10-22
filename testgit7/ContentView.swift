@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var pallete: String = "🍎💎"
     var body: some View {
-        HStack {
-            Text(pallete)
+        VStack {
+            HStack {
+                Text(pallete)
+            }
+            Rectangle().foregroundColor(.yellow)
         }
+        
         // Text("Hi, world!").padding()
     }
 }
